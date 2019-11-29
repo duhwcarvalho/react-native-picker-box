@@ -39,7 +39,6 @@ class PickerBox extends Component {
     }
 
     static defaultProps = {
-        data: [], // ex: {label:'JavaScript', value:'js'}
         selectedValue: undefined,
         maxHeight: (height*29.8913)/100,
         statusbar: true,
@@ -57,13 +56,12 @@ class PickerBox extends Component {
         this.state = {
             visible: false,
             verticalPos: new Animated.Value(-this.maxHeight),
-            data: props.data,
             selectedValue: props.selectedValue
         };
     }
 
     componentDidMount() {
-        this.state.data.map(item => {
+        this.props.data.map(item => {
             if (this.state.selectedValue === item.value) {
                 this._onValueChange(item)
             }
@@ -109,7 +107,7 @@ class PickerBox extends Component {
             <TouchableOpacity style={styles.boxItem} onPress={_ => { this._onValueChange(item) }}>
                 <Text style={[styles.text, styles.textItem, {color: this.props.itemTextColor}]}>{item.label}</Text>
             </TouchableOpacity>
-            {index !== this.state.data.length-1 && <View style={[styles.separator, {borderColor: this.props.separatorColor}]} />}
+            {index !== this.props.data.length-1 && <View style={[styles.separator, {borderColor: this.props.separatorColor}]} />}
         </View>
     );
 
@@ -137,7 +135,7 @@ class PickerBox extends Component {
                         bounces={false}
                         style={styles.flat}
                         contentContainerStyle={styles.contentFlat}
-                        data={this.state.data}
+                        data={this.props.data}
                         keyExtractor={(item, index) => index+''}
                         renderItem={this._renderItem}
                     />
