@@ -1,10 +1,10 @@
 <h1 align="center">react-native-picker-box</h1>
 
 
-<h2 align="left">
- [This package has been deprecated]
+<p align="left">
+ [This package has been deprecated]<br />
  Package no longer supported. Use at your own risk.
-</h2>
+</p>
 
 <br /><br /><br /><br />
 
