@@ -4,7 +4,7 @@
 [This package has been deprecated]
 Package no longer supported. Use at your own risk.
 
-<br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br />
 
 
 <p align="center">Simple and configurable component picker for react native</p>
