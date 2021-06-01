@@ -1,7 +1,7 @@
 <h1 align="center">react-native-picker-box</h1>
 
 ### Notice
-[This package has been deprecated]
+<h1 align="left" color="red">This package has been deprecated</h1>
 Package no longer supported. Use at your own risk.
 
 <br /><br /><br /><br />
