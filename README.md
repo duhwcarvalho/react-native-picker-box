@@ -1,7 +1,9 @@
 <h1 align="center">react-native-picker-box</h1>
 
 <h2 align="left">[This package has been deprecated]</h2>
-Package no longer supported. Use at your own risk.
+<p align="center">Package no longer supported. Use at your own risk.</p>
+
+
 
 <p align="center">Simple and configurable component picker for react native</p>
 
