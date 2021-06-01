@@ -1,11 +1,9 @@
 <h1 align="center">react-native-picker-box</h1>
 
 ### Notice
---
 [This package has been deprecated]
 Package no longer supported. Use at your own risk.
---
-## Notice
+
 
 <p align="center">Simple and configurable component picker for react native</p>
 
